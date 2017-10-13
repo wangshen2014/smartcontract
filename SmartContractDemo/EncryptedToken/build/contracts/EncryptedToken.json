@@ -1,0 +1,56 @@
+{
+  "contract_name": "EncryptedToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052620a2c2a600055341561001657600080fd5b5b60008054600160a060020a033316825260016020526040909120555b5b61017d806100436000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166370a082318114610048578063a9059cbb14610086575b600080fd5b341561005357600080fd5b61007473ffffffffffffffffffffffffffffffffffffffff600435166100b7565b60405190815260200160405180910390f35b341561009157600080fd5b6100b573ffffffffffffffffffffffffffffffffffffffff600435166024356100e3565b005b73ffffffffffffffffffffffffffffffffffffffff81166000908152600160205260409020545b919050565b73ffffffffffffffffffffffffffffffffffffffff331660009081526001602052604090205481901161011257fe5b73ffffffffffffffffffffffffffffffffffffffff338116600090815260016020526040808220805485900390559184168152208054820190555b50505600a165627a7a723058206388b918b4351a4618e3811b358454feab6ff6266e5ae8ed28507a0f27c5ca260029",
+  "networks": {
+    "1507933802303": {
+      "events": {},
+      "links": {},
+      "address": "0x2eaec73e4f8c7a943323a461084596221c3cd3ca",
+      "updated_at": 1507935673499
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1507935673499
+}

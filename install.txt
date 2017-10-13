@@ -1,0 +1,49 @@
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+geth --help
+sudo apt-get install vim -y
+mkdir eth
+cd eth
+
+{
+  "config": {
+        "chainId": 0,
+        "homesteadBlock": 0,
+        "eip155Block": 0,
+        "eip158Block": 0
+    },
+  "alloc": {
+  "0x0000000000000000000000000000000000000001": {"balance": "111111111"},
+  "0x0000000000000000000000000000000000000002": {"balance": "222222222"}
+},
+  "coinbase"   : "0x0000000000000000000000000000000000000000",
+  "difficulty" : "0x20000",
+  "extraData"  : "",
+  "gasLimit"   : "0x2fefd8",
+  "nonce"      : "0x0000000000000042",
+  "mixhash"    : "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "timestamp"  : "0x00"
+}
+
+vim piccgenesis.json
+basepath=$(pwd)
+
+geth init genesis.json
+
+npm install -g n
+n stable
+export PATH="/usr/local/n/versions/node/8.6.0/bin:$PATH"
+
+sudo npm -g install solc
+sudo npm -g install solc-cli
+sudo npm -g install solc@^0.3.5 solc-cli --save-dev
+sudo add-apt-repository ppa:ethereum/ethereum -y
+sudo apt-get update
+sudo apt-get install solc
+sudo apt-get install git build-essential -y
+sudo npm install -g ethereumjs-testrpc
+sudo npm install -g truffle
+
